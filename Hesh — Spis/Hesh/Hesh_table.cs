@@ -31,12 +31,12 @@ namespace Hesh
 
         public void AddItem(string Item)
         {
-            int SumItem = Hesh_Fun(Item);            
+            int SumItem = Hesh_Fun(Item);//поиск хеша        
             if(Count*2 < Table.Length)
             {
                 if (Table[SumItem] == null)
                 {
-                    Table[SumItem].Insert(Table1[SumItem].Count-1, Item);
+                    Table[SumItem].Insert(Table1[SumItem].Count-1, Item);//вставка элемента в список
                     Count++;
                 }  // развилка если ячейка занята
                 else
